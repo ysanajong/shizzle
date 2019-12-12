@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Usage: dedup-imovie-library LIBRARY ORIGINALS
+# Usage: ./dub.rb /iMovie/Libary /Original/File/Location
 #
 # Goes through an iMovie 10 library and replaces all the "Original Media" with
 # hardlinks to the actual original media, in order to conserve disk space. Note
@@ -9,10 +9,8 @@
 # tool.
 #
 # This assumes you've already imported the files into iMovie and waited for them
-# all to be copied.
-#
-# This also assumes movie files in LIBRARY have unique matches in ORIGINALS with
-# the same filename!
+# all to be copied. This also assumes movie files in LIBRARY have unique matches 
+# in ORIGINALS with the same filename!
 
 require 'fileutils'
 
